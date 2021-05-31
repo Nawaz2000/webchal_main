@@ -1,0 +1,33 @@
+{
+  "name": "wca_main",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandanbauri/webchal_main.git"
+  },
+  "author": "chandan bauri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chandanbauri/webchal_main/issues"
+  },
+  "homepage": "https://github.com/chandanbauri/webchal_main#readme",
+  "dependencies": {
+    "next": "^10.2.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.8",
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.2",
+    "typescript": "^4.3.2"
+  }
+}
