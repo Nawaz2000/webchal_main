@@ -13,7 +13,7 @@ const Wrapper: React.FC<wrapperProps> = ({ children, title }: wrapperProps) => {
           rel="stylesheet"
         ></link>
       </Head>
-      <div className="mb-20">
+      <div className="md:mb-20 mb-12">
         <Nav />
       </div>
 
