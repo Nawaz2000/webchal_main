@@ -1,19 +1,12 @@
+import { FilledButton, HollowButton } from "components/buttons"
 import LongCard from "components/cards/long"
+import FeatureSection from "components/sections"
 import Wrapper from "components/wrappper"
 import * as React from "react"
 import * as Feather from "react-feather"
 const Home: React.FunctionComponent = () => {
   let description = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.`
-  const HollowButton = () => (
-    <button className="border-wca border-2 px-4 py-2 text-wca w-48">
-      Discuss with us
-    </button>
-  )
-  const FilledButton = () => (
-    <button className="text-white px-4 py-2 bg-wca ml-4 w-48">
-      contact us
-    </button>
-  )
+
   return (
     <Wrapper>
       <header className="w-full flex items-center justify-center box-border md:mt-0 lg:mt-28">
@@ -66,6 +59,27 @@ const Home: React.FunctionComponent = () => {
         <div className="w-full flex items-center justify-center mt-10">
           <HollowButton />
         </div>
+      </section>
+      <section className="mt-16 flex flex-col justify-center items-center">
+        <FeatureSection
+          title="some title"
+          description={description}
+          image="/media/images/pp.jpeg"
+          makeButtonVisible={true}
+        />
+        <FeatureSection
+          title="some title"
+          description={description}
+          image="/media/images/pp.jpeg"
+          makeButtonVisible={false}
+          reverse={true}
+        />
+        <FeatureSection
+          title="some title"
+          description={description}
+          image="/media/images/pp.jpeg"
+          makeButtonVisible={true}
+        />
       </section>
     </Wrapper>
   )

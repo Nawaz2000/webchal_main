@@ -16,3 +16,12 @@ export interface cardProps {
   goto: string
   icon: React.ReactElement
 }
+
+export interface FSprops {
+  title: string
+  description: string
+  image: string
+  makeButtonVisible: boolean
+  buttontext?: string
+  reverse?: boolean
+}
