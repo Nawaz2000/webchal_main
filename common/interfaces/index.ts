@@ -7,3 +7,12 @@ export interface wrapperProps extends childrenProp {
 interface childrenProp {
   children: React.ReactNode
 }
+
+// ------------------
+
+export interface cardProps {
+  title: string
+  description: string
+  goto: string
+  icon: React.ReactElement
+}
