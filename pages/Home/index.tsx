@@ -1,5 +1,6 @@
 import { FilledButton, HollowButton } from "components/buttons"
 import LongCard from "components/cards/long"
+import ProjectCard from "components/cards/project"
 import FeatureSection from "components/sections"
 import Wrapper from "components/wrappper"
 import * as React from "react"
@@ -80,6 +81,33 @@ const Home: React.FunctionComponent = () => {
           image="/media/images/pp.jpeg"
           makeButtonVisible={true}
         />
+      </section>
+      <section className="mt-16 bg-gray-100 py-10">
+        <div
+          className="flex flex-row flex-wrap justify-center items-center"
+          style={{ maxWidth: "1600px" }}
+        >
+          <ProjectCard
+            title="some title"
+            image="/media/images/pp.jpeg"
+            description={description}
+          />
+          <ProjectCard
+            title="some title"
+            image="/media/images/pp.jpeg"
+            description={description}
+          />
+          <ProjectCard
+            title="some title"
+            image="/media/images/pp.jpeg"
+            description={description}
+          />
+          <ProjectCard
+            title="some title"
+            image="/media/images/pp.jpeg"
+            description={description}
+          />
+        </div>
       </section>
     </Wrapper>
   )
