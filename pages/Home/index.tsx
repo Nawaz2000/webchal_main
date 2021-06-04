@@ -82,12 +82,12 @@ const Home: React.FunctionComponent = () => {
           makeButtonVisible={true}
         />
       </section>
-      <section className="mt-16 bg-gray-100 py-10">
+      <section className="mt-16 bg-gray-100 py-10 flex flex-col items-center">
+        <h1 className="text-wca text-2xl md:text-3xl font-bold">Projects</h1>
         <div
           className="flex flex-row flex-wrap justify-center items-center"
           style={{ maxWidth: "1600px" }}
         >
-          <h1 className="text-wca text-2xl md:text-3xl font-bold">Projects</h1>
           <ProjectCard
             title="some title"
             image="/media/images/pp.jpeg"
