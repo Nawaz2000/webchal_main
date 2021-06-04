@@ -2,6 +2,7 @@ import * as React from "react"
 import Head from "next/head"
 import { wrapperProps } from "common/interfaces"
 import Nav from "components/navbar"
+import Footer from "components/footer"
 const Wrapper: React.FC<wrapperProps> = ({ children, title }: wrapperProps) => {
   return (
     <>
@@ -16,9 +17,8 @@ const Wrapper: React.FC<wrapperProps> = ({ children, title }: wrapperProps) => {
       <div className="md:mb-20 mb-12">
         <Nav />
       </div>
-
       {children}
-      <footer>Footer</footer>
+      <Footer />
     </>
   )
 }
